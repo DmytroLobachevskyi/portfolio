@@ -271,8 +271,7 @@ ul li {
 .download {
     grid-column: 9/9;
     font-size: 15px;
-    margin: 30px 20px;
-    margin-top: 30px;
+    margin: 30px 5px;
 }
 .loading a {
     text-decoration: none;
@@ -287,26 +286,79 @@ ul li {
     z-index: 101;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
 .loading:hover {
     box-shadow: 0 0 10px rgb(202, 201, 201);
 }
-@media screen and (max-width: 1280px) { 
-    .download { 
-        grid-column: 9/8; 
-    } 
-}
-@media screen and (max-width: 1140px) { 
-    .download { 
-        grid-column: 9/8; 
-    } 
-} 
-.icond {
+.icon-download {
     width: 20px;
     margin: 3px 10px 5px 10px;
     position: relative;
     top: 4px; 
 }
+
+@media screen and (max-width: 1280px) { 
+    .download { 
+        grid-column: 8/9;
+    } 
+}
+@media screen and (max-width: 1201px) { 
+    .download { 
+        grid-column: 8/9;
+        margin: -63em 5px;
+    } 
+}
+@media screen and (max-width: 1140px) { 
+    .download { 
+        grid-column: 8/9;
+        margin: -58em 5px;
+    } 
+}
+@media screen and (max-width: 960px) { 
+    .download { 
+        grid-column: 8/9;
+        margin: -56em 5px;
+    } 
+}
+@media screen and (max-width: 960px) { 
+    .download { 
+        display: none;
+    } 
+}
+
+.download-mob {
+    font-size: 15px;
+    margin: 18px 49px;
+}
+.loading-mob a {
+    text-decoration: none;
+    color: white;
+}
+.loading-mob {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    z-index: 102;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(202, 201, 201);
+    cursor: pointer;
+}
+.icon-download-mob {
+    width: 20px;
+    margin: 3px 10px 5px 10px;
+    position: relative;
+    top: 4px; 
+}
+@media screen and (min-width: 821px) { 
+    .download-mob { 
+        display: none;
+    } 
+}
+
 .header {
     display: grid;
     position: fixed;
